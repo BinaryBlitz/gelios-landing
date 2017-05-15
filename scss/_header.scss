@@ -1,0 +1,164 @@
+$main: #4a4a4a;
+$green: #01a54e;
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  font-family: 'Rubik';
+  color: $main;
+}
+
+a {
+  font-family: 'Rubik';
+  text-decoration: none;
+  transition: 300ms;
+  display: inline-block;
+  color: $green;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    opacity: 1;
+    color: $green;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+.cf:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.container {
+  width: 1350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.head {
+  font-size: 2.5rem;
+  color: $green;
+  font-weight: 500;
+  margin-bottom: 72px;
+}
+
+.section {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.link {
+  opacity: .5;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+/* Header */
+
+.header-wrap {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  font-size: 2.8em;
+  float: left;
+  margin: 22px 90px 17px 0;
+}
+
+.nav {
+  float: left;
+  margin-top: 30px;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      border-radius: 50px;
+      line-height: 42px;
+      border: 1px solid transparent;
+      padding: 0 20px;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      color: #000;
+      &:hover,
+      &.active {
+        border: 1px solid #cceddc;
+        color: $green;
+      }
+      &.active {
+        &:hover {
+          border: 1px solid $green;
+        }
+      }
+    }
+  }
+}
+
+.burger-wrap {
+  display: none;
+}
+
+.callback {
+  float: right;
+  margin-top: 29px;
+  &-number {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+    font-weight: 500;
+    font-size: 1.25em;
+    a,
+    i {
+      color: #ff4500;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    i {
+      font-size: 2em;
+      margin-right: 17px;
+    }
+    a {
+      font-size: 1.25em;
+      font-weight: 500;
+    }
+  }
+  &-link {
+    line-height: 42px;
+    border: 1px solid #cceddc;
+    border-radius: 50px;
+    padding: 0 13px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover {
+      border: 1px solid $green;
+    }
+    i {
+      font-size: 1.6rem;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+  }
+}
