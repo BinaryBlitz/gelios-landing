@@ -40,7 +40,7 @@
     }
   }
   &-item {
-    padding: 20px 0;
+    padding: 17px 0;
     border-top: 1px solid #e5e5e5;
     &:first-child {
       padding-top: 0;
@@ -48,8 +48,9 @@
     }
     p {
       font-size: 1.1em;
+      margin-bottom: .7em !important;
       &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
       }
       i {
         width: 18px;
